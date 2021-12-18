@@ -34,4 +34,4 @@
 # Project specific
 .vscode/
 *.txt
-*.SYM/
+*.dSYM/
