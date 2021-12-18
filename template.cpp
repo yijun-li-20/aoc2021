@@ -29,11 +29,13 @@ int main(int argc, char *argv[])
     switch (stoi(argv[2]))
     {
     case 0:
-
+    {
         break;
+    }
     case 1:
-
+    {
         break;
+    }
     default:
         break;
     }
