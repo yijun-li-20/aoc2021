@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
             }
         }
         // horizontal lines: same y
-        for(auto iter=my.begin(); iter!=my.end(); iter++){
+        for(auto iter=mx.begin(); iter!=mx.end(); iter++){
             for(int x=iter->second.first; x!=iter->second.second+1;x++){
                 if(c.count(MP(x, iter->first))){
                     if(c[MP(x, iter->first)] == 1) res++;
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
         }
         // vertical lines: same x
-        for(auto iter=mx.begin(); iter!=mx.end(); iter++){
+        for(auto iter=my.begin(); iter!=my.end(); iter++){
             for(int y=iter->second.first; y!=iter->second.second+1;y++){
                 if(c.count(MP(iter->first,y))){
                     if(c[MP(iter->first,y)] == 1) res++;
@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
             }
         }
         // horizontal lines: same y
-        for(auto iter=my.begin(); iter!=my.end(); iter++){
+        for(auto iter=mx.begin(); iter!=mx.end(); iter++){
             for(int x=iter->second.first; x!=iter->second.second+1;x++){
                 if(c.count(MP(x, iter->first))){
                     if(c[MP(x, iter->first)] == 1){ res++;}
@@ -119,7 +119,7 @@ int main(int argc, char *argv[])
 
         }
         // vertical lines: same x
-        for(auto iter=mx.begin(); iter!=mx.end(); iter++){
+        for(auto iter=my.begin(); iter!=my.end(); iter++){
             for(int y=iter->second.first; y!=iter->second.second+1;y++){
                 if(c.count(MP(iter->first,y))){
                     if(c[MP(iter->first,y)] == 1){ res++;}
